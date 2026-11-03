@@ -1,0 +1,323 @@
+
+/* Regular */
+@font-face {
+    font-family: "General Sans";
+    src: url("./fonts/general-sans/GeneralSans-Regular.otf")
+         format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: "General Sans";
+    src: url("./fonts/general-sans/GeneralSans-Medium.otf")
+         format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+    font-family: "General Sans";
+    src: url("./fonts/general-sans/GeneralSans-Semibold.otf")
+         format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: "General Sans";
+    src: url("./fonts/general-sans/GeneralSans-Bold.otf")
+         format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Apply the font globally */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans", sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: black;
+}
+
+#mainpoint{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #fff;
+    position: absolute;
+    z-index: 999;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+#main{
+    width: 100%;
+}
+
+
+#hero{
+   height: 100vh;
+   width: 100%; 
+   background-color: black;
+   position:relative ;
+}
+
+#nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 40px;
+    align-items: center;
+    
+   
+}
+
+#nav a{
+    height: fit-content;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    
+     
+}
+.bounding{
+    overflow: hidden;
+}
+
+.moveup{
+    transform: translateY(100%);  
+}
+
+.movedown{
+    transform: translateY(-100%);  
+}
+.menu{
+    cursor: pointer;
+}
+
+#heading{
+    margin-top: 40px;
+    color: #fff;
+}
+
+#heading h1{
+   margin-left: 30px;
+    font-size: 10vw;
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 500;
+    line-height: .9;
+}
+#heading .head5{
+
+    /* margin-top: 16px; */
+   
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+    opacity: 1;
+    font-size: 16px;
+    letter-spacing: 1.4px;
+
+}
+
+
+#heading #secondh1 {
+    margin-left: 180px;
+}
+
+.blocktext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+    gap: 8px;
+    /* background-color:aqua; */
+}
+
+#SideHead{
+    text-align: right;
+    margin-right: 30px;
+    margin-top:30px;   
+     text-transform: uppercase;
+}
+
+#SideHead h3{
+    height: fit-content;
+    font-weight: 500;
+    font-size: 1rem;
+
+    
+
+}
+
+#heroFooter{
+    width: 100%;
+    padding: 0 2vw;
+    display: flex;
+    position: absolute;
+    /* margin-top : 32px; */
+    bottom: 24px;
+    justify-content: space-between;
+    
+    
+}
+#heroFooter a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+#iconset{
+    display: flex;
+    gap: 8px;
+}
+
+#iconset .circle{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #888;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.593);
+    margin-top: 120px;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+
+.ProjCard{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
+    /* cursor: url("img/lucid-motors.webp"), auto */
+}
+
+.ProjText{
+    font-size: 90px;
+    font-weight: 500;
+    color: #ffffff9d;
+    text-transform: uppercase;
+}
+.ProjCard img{
+     opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);   
+}
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+      /* border : 2px solid red; */
+      padding-left: 10vw;
+
+}
+#about-content{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    gap: 24px;
+    padding: 20vh 10% 20vh 40px;
+    /* padding-right: 10%; */
+       /* border : 2px solid rgb(171, 145, 223); */
+  
+
+}
+#about-content img{
+    width: 224px;
+    
+
+}
+
+.textcontainer{
+    width: 416px;
+    height: auto;
+    
+}
+.textcontainer h5{
+    text-transform: uppercase;
+}
+
+.textcontainer p{
+    font-size: 18px;
+}
+
+.ytchannel{
+    margin-bottom: 48px;
+    color: #888;
+}
+.ytchannel a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tert{
+    margin-top: 12px;
+    border: 2px solid white;
+    background-color: black;
+    color: #fff ;
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+
+}
+#footer h5{
+    display :inline;
+    padding: 0 8px;
+}
+
+#socials{
+    display: flex;
+    gap: 12px;
+}
+#socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.expand{
+    display: flex;
+    gap: 24px;
+    text-transform: uppercase;
+}
+
+.hidden{
+    display: none;
+}
